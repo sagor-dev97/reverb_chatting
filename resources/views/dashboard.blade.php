@@ -7,6 +7,9 @@
             <a href="{{ route('chat') }}" class="text-red-500 hover:underline">
                 Chatting
             </a>
+            <a href="{{'/audio-call'}}" class="text-red-500 hover:underline">
+                Calling
+            </a>
         </div>
     </x-slot>
 
