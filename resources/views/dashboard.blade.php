@@ -10,6 +10,10 @@
             <a href="{{'/audio-call'}}" class="text-red-500 hover:underline">
                 Calling
             </a>
+            <a href="{{'/ai'}}" class="text-red-500 hover:underline">
+                Gpt Chatting
+
+            </a>
         </div>
     </x-slot>
 

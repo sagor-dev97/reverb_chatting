@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AIController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AudioCallController;
@@ -45,6 +46,8 @@ Route::post('/audio-call/ended', [AudioCallController::class, 'ended'])->middlew
 //     Route::get('/chatting', 'index')->name('chatting');
 // });
 // Route::get('/send-message', [ChatController::class, 'sendMessage'])->middleware('auth');
+Route::get('/ai', [AIController::class, 'index'])->name('ai');
+Route::post('/ai/suggest', [AIController::class, 'suggest'])->name('ai.suggest');
 
 
 require __DIR__.'/auth.php';
